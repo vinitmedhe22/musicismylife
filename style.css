@@ -1,0 +1,1301 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+
+
+body{
+    width: 100;
+}
+
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 60px;
+    background: #E5D9FA;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#header a img{
+    padding-top: 5px;
+    width: 120px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#navbar li{
+    list-style-type: none;
+    padding: 0 20px;
+    position: relative;
+
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color: #B23B9F;
+   
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background:#B23B9F;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+
+}
+
+#mobile{
+    display: none;
+    align-items: center;
+}
+
+#close{
+    display: none;
+}
+
+#banner{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(./Image/Group\ 67.png);
+    background-size: cover;
+    background-position: center;
+    padding: 2rem 7%;
+}
+
+#banner .content{
+    max-width: 60rem;
+}
+
+#banner .content h1{
+    font-size: 6rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+
+}
+
+#banner .content p{
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+
+    color: #522A54;
+}
+
+
+/* brand section css*/
+
+.brands{
+    min-height: 100vh;
+}
+
+.heading{
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 1rem;
+    padding-top: 8.5rem;
+    width: 50rem;
+    margin: 0 auto;
+    text-decoration: underline #D1EE1D;
+    color: #6E197B;
+    
+}
+
+
+.brands .row{
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.brands .row .image{
+    text-align: center;
+    flex: 1 1 30rem;
+}
+
+.brands .row .image img{
+    height: 80vh;
+    padding: 3rem 0;
+}
+
+
+.brands .row .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 1 1 40rem;
+
+}
+
+.brands .row .box-container .box{
+    justify-content: center;
+    margin: 1.5rem;
+    padding: 1rem;
+    width: 13.5rem;
+}
+
+.brands .row .box-container .box:nth-child(3) img{
+    width: 11rem;
+    margin-bottom: 14px
+}
+
+.brands .row .box-container .box:nth-child(4) img{
+    width: 7.1rem;
+}
+
+.brands .row .box-container .box:nth-child(6) img{
+    width: 11rem;
+    margin-bottom: 10px;
+}
+
+.brands .row .box-container .box:nth-child(5) img{
+    width: 7.3rem;
+}
+
+
+/* best seller css*/
+
+.best-seller{
+    min-height: 100vh;
+}
+
+
+.text h1{
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 2.5rem;
+    padding: 1rem;
+    padding-top: 7rem;
+    width: 50rem;
+    margin: 0 auto;
+    color: #80368B;
+    text-decoration: underline #D1EE1D;
+}
+
+
+.best-seller .row2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.best-seller .row2 .container-product{
+    display: flex;
+    background-color: #E5D9FA;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 1 1 50rem;
+    margin-top: 2rem;
+}
+
+.best-seller .row2 .container-product .card{
+    padding: 10px;
+    text-align: center;
+    margin: 3rem;
+}
+
+.best-seller .row2 .container-product .card p{
+    font-weight: bold;
+}
+
+/* categories css */
+
+.categories{
+    min-height: 100vh;
+}
+
+.text2 h1{
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 1rem;
+    padding-top: 7rem;
+    width: 50rem;
+    margin: 0 auto;
+    color: #80368B;
+    text-decoration: underline #D1EE1D;
+}
+
+.categories .row3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.categories .row3 .container-categories{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 1 1 50rem;
+    margin-top: 1rem;
+}
+
+.categories .row3 .container-categories .card-categories{
+    padding: 10px;
+    text-align: center;
+    margin: 3rem;
+
+}
+
+.categories .container-categories .card-categories a img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+/* banner start  */
+
+.banner-member{
+   padding-top: 8rem;
+   min-height: 100vh;
+}
+
+.banner-member .img-banner a img{
+   align-items: center;
+   display: flex;
+   width: 100%;
+   height: 100%;
+}
+
+/* footer start  */
+
+footer{
+    bottom: 0;
+}
+
+.footer-distributed{
+    background-color: #9282C8;
+    box-sizing: border-box;
+    text-align: left;
+    widows: 100%;
+    font: bold 16px sans-serief;
+    padding: 50px 50px 60px 50px;
+    margin-top: 76px;
+}
+
+.responsive-footer{
+    margin-top: 100px;
+    bottom: 0;
+}
+
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+.footer-distributed .footer-left {
+    width: 30%;
+    margin-left: 10px;
+}
+
+.footer-distributed .footer-left img {
+    width: 200px;
+    
+}
+
+
+.footer-distributed .footer-links {
+    color: #0a0505;
+    margin-bottom: 20px;
+    margin-right: 12px;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+    color: #000000;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+
+.footer-distributed .footer-center {
+    width: 35%;
+    margin-top: 15px;
+}
+
+.footer-distributed .footer-center img {
+    font-size: 25px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #000000;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+    width: 30%;
+    margin-left: 10px;
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #000000;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+
+
+/* About Page */
+
+.about{
+    min-height: 100vh;
+}
+
+.about .row3{
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about .row3 .image_rock{
+    text-align: center;
+    flex: 1 1 20rem;
+}
+
+.about .row3 .image_rock img{
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.about .row3 .box-text{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: wrap;
+    flex: 1 1 40rem;
+
+}
+
+.about .row3 .box-text .head-text h2{
+    margin-left: 2.5rem;
+    font-size: 2.5rem;
+}
+
+.about .row3 .box-text .texts{
+    justify-content: center;
+    margin: 1.9rem;
+    padding: 1rem;
+    width: 50rem;
+}
+
+.about .row3 .box-text .texts p{
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+
+/* section 2  */
+
+.about2{
+    min-height: 90vh;
+    background-image: url("./Image/Used\ Electric\ Guitars\ _\ The\ Music\ Emporium\ 1.png");
+}
+
+.about2 .row4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about2 .row4 .image-shop{
+    text-align: center;
+    flex: 1 1 20rem;
+}
+
+.about2 .row4 .image-shop img{
+    width: 100%;
+    margin-top: 7rem;
+}
+
+.about2 .row4 .box-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 1 1 40rem;
+    margin-top: 9rem;
+    padding: 2rem;
+
+}
+
+.about2 .row4 .box-text .head-text2 h2{
+    text-align: center;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+
+.about2 .row4 .box-text .texts{
+    justify-content: center;
+    margin: 1.5rem;
+    padding: 1rem;
+    width: 50rem;
+}
+
+.about2 .row4 .box-text .texts p{
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+/* About Page End */
+
+
+/* contact us start */
+
+.contact{
+    min-height: 100vh;
+}
+
+.contact .row5{
+    margin-top: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.contact .row5 .box-text2{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    flex-wrap: wrap;
+    flex: 1 1 10rem;
+    margin-left: 4rem;
+    margin-right: 7rem;
+}
+
+.contact .row5 .box-text2 .heading2 h2{
+    /* font-family: sans-serif; */
+    text-align: justify;
+    justify-content: left;
+    font-size: 2.5rem;
+    padding-left: 1.7rem;
+    text-transform: uppercase;
+} 
+
+.contact .row5 .box-text2 .text-aja{
+    justify-content: left;
+    margin-top: 1rem;
+    width: 37rem;
+}
+
+.contact .row5 .box-text2 .text-aja p{
+    font-size: 1.5rem;
+    text-align: justify;
+    padding-left: 2rem;
+}
+
+.contact .row5 .information{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: wrap;
+    flex: 1 1 20rem;
+    background-color: #B2A2E8;
+}
+
+.contact .row5 .information .box-info{
+    max-width: 500px;
+    line-height: 90px;
+    padding-left: 50px;
+    font-size: 23px;
+}
+
+.contact .row5 .information .box-info h3{
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.contact .row5 .information .box-info img{
+    margin-right: 20px;
+    width: 24px;
+}
+
+
+/* contact us end  */
+
+/* membership */
+.membership-background{
+    background: linear-gradient(180deg, rgba(213, 178, 253, 0.7) 0%, #FFD9FC 22.4%, rgba(249, 194, 255, 0.94) 43.23%, #F8E7FA 61.98%, rgba(250, 242, 239, 0.97) 70.31%, #FFF8F7 78.65%, #E2D0FF 100%);
+}
+
+.member{
+    height: 100vh;
+}
+
+.member .title4{
+    /* top: 50%; */
+    margin-top: 35%;
+    font-size: 45px;
+}
+
+.member .title4 h2{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    justify-content: left;
+    font-size: 2.5rem;
+    padding-left: 1.7rem;
+    text-transform: uppercase;
+} 
+
+.member .text-aja{
+    justify-content: left;
+    margin-top: 1rem;
+    width: 37rem;
+}
+
+.member .details{
+    text-align: left;
+}
+
+.member .text-aja p{
+    text-align: justify;
+    padding-left: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.member .row6{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 3.5rem;
+  margin-top: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.member .member-box{
+  text-align: left;
+}
+
+.member .signup{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 1 1 30rem;
+    font-size: xx-large;
+    z-index: 500;
+    font-weight: bold;
+}
+
+form .user-detail .input-box{
+    margin-bottom: 1.2rem;
+}
+
+input{
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    border-bottom: 3px solid black;
+    background-color: transparent;
+    outline: none;
+    color: black;
+    caret-color: black;
+}
+
+.text-box{
+    height: 30px;
+    width: 100%;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+.alert{
+    color: rgb(156, 53, 165);
+    font-size: large;
+} 
+
+form .daily .check-box{
+    position: relative;
+    font-size: 17px;
+}
+
+
+  form .buttons button{
+    position: relative;
+    width: 504px;
+    height: 40px;
+    background-color: #4e3e68;
+    border: none;
+    color: white;
+    background-color: #4e3e68;
+  }
+
+  form .buttons button:hover{
+    background-color: rebeccapurple;
+  }
+
+
+/* membership end */
+
+@media (max-width: 1285.60px){
+    
+    .categories .row3 .container-categories .card-categories img{
+        width: 23rem;
+    }
+
+    .best-seller, .banner, .brands, .banner-member{
+        min-height: 90vh;
+    }
+
+    .best-seller .row2 .container-product .card img{
+        width: 15rem;
+    }
+
+    .best-seller .row2 .container-product .card .star{
+        width: 8rem;
+    }
+
+    .best-seller .row2 .container-product .card{
+        margin: auto;
+     }
+
+     .brands .row .box-container .box{
+        margin: auto;
+    }
+
+    .about{
+        margin-top: 4rem;
+        min-height: 70vh;
+    }
+
+    .about2{
+        margin-top: 4rem;
+        min-height: 70vh;
+    }
+
+    form{
+        font-size: 80%;
+    }
+
+    form .alert, .member form{
+        font-size: 60%;
+    }
+
+    form .input-box{
+        margin: auto;
+    }
+
+    .text-box{
+        height: 25px;
+    }
+
+    .member .row6 .member-box .title4{
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 1020px){
+    
+    .best-seller, .brands, .banner-member .categories{
+        min-height: 75vh;
+    }
+
+    .about{
+        margin-top: 4rem;
+        min-height: 60vh;
+    }
+
+    .about2{
+        margin-top: 4rem;
+        min-height: 60vh;
+    }
+
+    #banner{
+        min-height: 60vh;
+    }
+
+    .categories .row3 .container-categories .card-categories img{
+        width: 21.5rem;
+    }
+
+    .best-seller .row2 .container-product .card img{
+        width: 14.5rem;
+    }
+
+    .best-seller .row2 .container-product .card .star{
+        width: 7rem;
+    }
+
+
+    .brands .row .box-container .box img{
+        width: 13rem;
+    }
+
+    .brands .row .image img{
+        height: 40rem;
+    }
+
+    .brands .row .box-container .box{
+        margin: auto;
+    }
+
+    .best-seller .row2 .container-product .card{
+        margin: auto;
+     }
+
+     form{
+        font-size: 80%;
+    }
+
+    form .alert, .member form{
+        font-size: 60%;
+    }
+
+    form .input-box{
+        margin: auto;
+    }
+
+    .text-box{
+        height: 50%;
+    }
+
+    .member .row6{
+        margin-top: 0;
+    }
+
+
+}
+
+
+
+@media (max-width: 800px){
+   
+    /*navbar */
+
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #d2c0f0;
+        box-shadow: 0 40px 60px rgba(22, 21, 21, 0.01);
+        z-index: 1000;
+        padding: 80px 0 0 10px;
+    }
+
+    #navbar.active{
+        right: 0px;
+    }
+
+    #navbar li{
+        margin-bottom: 25px;
+    }
+
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+
+    #close {
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+
+    #close .x{
+        width: 1.5rem;
+    }
+
+
+
+    /* navbar end  */
+
+    /* banner  */
+    #banner{
+        min-height: 50vh;
+        padding: 2rem;
+    }
+
+    #banner h1{
+        font-size: 4.5rem;
+    }
+
+    #banner p{
+        font-size: 1.5rem;
+    }
+
+    /* brand  */
+
+    .brands{
+        min-height: 55vh;
+    }
+
+    .heading{
+        width: auto;
+    }
+
+    .brands .row .image img{
+        height: 50vh;
+        padding: 3rem 0;
+    }
+
+    .brands .row .box-container .box{
+        margin: auto;
+    }
+
+    .brands .row .box-container .box img{
+        width: 13rem;
+    }
+    
+    .brands .row .box-container .box p{
+        font-size: 1.5rem;
+        text-align: center;
+        
+    }
+
+    /* best seller  */
+    .best-seller{
+        min-height: 50vh;
+    }
+    
+    .best-seller .row2 .container-product .card{
+       margin: auto;
+    }
+    .best-seller .row2 .container-product .card img{
+        width: 15rem;
+    }
+
+    .best-seller .row2 .container-product .card .star{
+        width: 10rem;
+    }
+
+    .best-seller .row2 .container-product .card p{
+        font-size: 1.5rem;
+    }
+
+    /* categories */
+
+    .categories{
+        min-height: 50vh;
+    }
+
+    .categories .row3 .container-categories .card-categories{
+        margin: auto;
+    }
+
+    .categories .row3 .container-categories .card-categories img{
+        width: 21rem;
+    }
+    
+    /* banner  */
+    .banner-member{
+        min-height: 40vh;
+    }
+
+    /* footer  */
+
+    .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+
+    .about{
+        margin-top: 4rem;
+        min-height: 40vh;
+    }
+
+    .about2{
+        margin-top: 4rem;
+        min-height: 40vh;
+    }
+
+    /* member start*/
+
+
+    .member{
+        min-height: 50vh;
+    }
+
+    .member .row6 .box-text2{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .member .row6 .box-text2 .title4 h2{
+        justify-content: center;
+        font-size: 2rem;
+    }
+
+    .member .row6 .box-text2 .text-aja p{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    form{
+        width: 50%;
+    }
+
+    .input-box span{
+        font-size: 55%;
+    }
+
+    form .buttons button{
+        width: 50%;
+    }
+
+    .text-box{
+        font-size: 55%;
+    }
+
+    .contact{
+        min-height: 55vh;
+    }
+
+    .contact .row5 .information .box-info{
+        width: 100%;
+        height: 100%;
+        font-size: 2rem;
+    }
+
+    .contact .row5 .information .box-info img{
+        width: 2.5rem;
+        margin-right: 2px;
+    }
+
+    form .alert, .member form{
+        font-size: 60%;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 1030px) and (max-width: 1366px){
+    .signup{
+        font-size: 80%;
+    }
+
+    .member{
+        min-height: 55vh;
+    }
+
+    form .alert, .member form{
+        font-size: 70%;
+    }
+
+    form .input-box{
+        margin: auto;
+    }
+
+    .text-box{
+        height: 50%;
+    }
+
+    .categories .row3 .container-categories .card-categories{
+        margin: auto;
+    }
+  }
+
+
+  @media only screen and (min-width: 768px) and (max-width: 1020px){
+    html{
+        font-size: 55%;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .best-seller{
+        min-height: 30vh;
+    }
+
+    .categories, .member{
+        min-height: 40vh;
+    }
+
+    .categories .row3 .container-categories .card-categories{
+        margin: auto;
+    }
+
+    .banner-member{
+        min-height: 40vh;
+        margin-top: 0;
+    }
+
+    form{
+        font-size: 55%;
+        height: 55%;
+        width: 55%;
+    }
+
+    form .buttons button{
+        width: 100%;
+        margin-top: 3px ;
+    }
+
+    form .alert, .member form{
+        font-size: 60%;
+    }
+
+    .about, .about2{
+        min-height: 25vh
+    }
+
+    .about{
+        margin-top: 0;
+    }
+
+    .about2{
+        margin-top: 2px;
+        margin-bottom: 0;
+    }
+
+    form .input-box{
+        margin: auto;
+    }
+
+    .text-box{
+        height: 50%;
+    }
+
+  }
+
+  @media only screen and (min-width: 912px) and (max-width: 912px){
+    html{
+        font-size: 93%;
+        width: 100%;
+        height: 100%;
+    }
+
+    #banner{
+        min-height: 50vh;
+    }
+
+    .brands{
+        min-height: 55vh;
+    }
+
+    .brands .row .image img{
+        height: 30vh;
+    }
+
+    .brands .row .box-container .box{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .brands .row .box-container .box img{
+        width: 7rem;
+    }
+
+    .best-seller{
+        min-height: 50vh;
+    }
+
+    .categories, .member{
+        min-height: 50vh;
+    }
+
+    .banner-member{
+        min-height: 50vh;
+        margin-top: 0;
+    }
+
+    form .alert, .member form{
+        font-size: 50%;
+    }
+
+
+
+
+  } 
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
+    .contact .row5 .box-text2{
+        width: 70%;
+    }
+    /* .contact .row5 .box-text2 .heading2 h2{
+        font-size: 1rem;
+    } */
+
+    .contact .row5 .information .box-info{
+        width: 100%;
+        height: 100%;
+        font-size: 1rem;
+    }
+
+
+    .member{
+        min-height: 55vh;
+    }
+
+    .member .row6{
+        margin-top: 0;
+    }
+
+    .member .row6 .member-box:nth-child(1){
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .member .row6 .member-box .title4{
+        margin-top: 2rem;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .member .member-box .title4 h2{
+        font-size: 55%;
+    }
+
+    .member .member-box .text-aja p{
+        font-size: 12px;
+    }
+
+    form{
+        font-size: 16px;
+        height: 60%;
+        width: 60%;
+    }
+
+    
+    #banner{
+        min-height: 55vh;
+    }
+
+    .about{
+        min-height: 55vh;
+        font-size: 50%;
+        margin-bottom: 0;
+    }
+
+    .about2{
+        min-height: 25vh;
+        font-size: 50%;
+    }
+
+    .about .row3 .box-text{
+        width: 50%;
+    }
+
+    .about2 .row4 .box-text{
+        width: 50%;
+    }
+
+    .about2 .row4 .image-shop img{
+        margin-top: 0;
+        width: 70%;
+    }
+
+    form .alert, .member form{
+        font-size: 50%;
+    }
+    
+  }
+  
