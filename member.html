@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanaka Guitar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="membership-background">
+
+    <section id ="header">
+        <a href="#"><img src="./Image/logotanaka.png" class=logo alt=""></a>
+ 
+        <div>
+            <ul id ="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a class="active" href="member.html">Member</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <a href="#" id="close"> <img class="x" src="./Image/bi_x-lg.png" alt=""></a>
+            </ul>
+        </div>
+
+        <div id="mobile">
+            <img id="bar" src="./Image/fe_bar.png" alt="">
+        </div>
+     </section>
+
+    <section class="member" id="member">
+        <div class="row6">
+            <div class="member-box">
+                <div class="title4">
+                    <h2>MEMBERSHIP</h2>
+                </div>    
+                <div class="text-aja">
+                    <p>Join our membership and get special offers</p>
+                </div>
+            </div>
+
+            <div class="member-box">
+                <div class="signup">
+                    <form onSubmit=formSubmit(event)>
+                        <div class="user-detail">
+                            <div class="input-box">
+                                <span class="details">Name</span>
+                                <input class="text-box" type="text" id="nama">
+                                <div id="errorname" class="alert"></div>
+                            </div>
+    
+                            <div class="input-box">
+                                <span class="details">Gender</span>
+                                <input class="text-box" type="text" id="gender">
+                                <div id="errorgender" class="alert"></div>
+                            </div>
+    
+                            <div class="input-box">
+                                <span class="details">Address</span>
+                                <input class="text-box" type="text" id="address">
+                                <div id="erroraddress" class="alert"></div>
+                            </div>
+    
+                            <div class="input-box">
+                                <span class="details">Email</span>
+                                <input class="text-box" type="text" id="email">
+                                <div id="erroremail" class="alert"></div>
+                            </div>
+    
+                            <div class="input-box">
+                                <span class="details">Phone Number</span>
+                                <input class="text-box" type="text" id="phone">
+                                <div id="errorphone" class="alert"></div>
+                            </div>
+                        </div>
+    
+                        <div class="daily">
+                            <input type="checkbox" class="check-box">
+                            <a class="check-box">Get daily newsletter</a>
+                        </div>
+    
+                        <div class="buttons">
+                            <button type="button" class="send" id="click" onclick="validateForm()">SEND
+                            </button>
+                        </div>
+                      </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <footer class="footer-distributed responsive-footer">
+        <div class="footer-left">
+            <img src="./Image/logotanaka.png" alt="">
+            <p class="footer-links">
+                <a href="index.html">Home</a>
+                |
+                <a href="about.html">About Us</a>
+                |
+                <a href="contact.html">Contact Us</a>
+                |
+                <a href="gallery.html">Gallery</a>
+            </p>
+   
+            <p class="footer-company-name"> Tanaka Guitar's Guitar Gallery</p>
+   
+        </div>
+   
+        <div class="footer-center">
+            <div>
+                <img src="./Image/clarity_email-solid.png" alt="">
+                <p>TanakaGuitar@gmail.com
+                </p>
+            </div>
+   
+            <div>
+               <img src="./Image/phone.png" alt="">
+               <p>+62 81234567890</p>
+           </div>
+   
+           <div>
+               <img src="./Image/location.png" alt="">
+               <p><span></span> India</p>
+           </div>
+   
+        </div>
+   
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About The Company</span>
+                <strong>Tanaka Guitar</strong> Tanaka Guitar is a famous guitar store established in August 2021. There are a lot of branches all over Indonesia. Our store provides high-quality guitars from many brands. 
+                 
+            </p>
+   
+            <div class="footer-icons">
+                <a href="#">
+                    <img src="./Image/facebook.png" alt="">
+                </a>
+   
+                <a href="#">
+                   <img src="./Image/instagram.png" alt="">
+               </a>
+   
+               <a href="#">
+                   <img src="./Image/fa_twitter-square.png" alt="">
+               </a>
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+<script src="script.js"></script>
+</html>
